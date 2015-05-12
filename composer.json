@@ -1,0 +1,14 @@
+{
+    "name": "bveing/my-crawler",
+    "description": "A simple crawler for a technical test",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Benoit Viguier",
+            "email": "benoit+github@wizacha.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
