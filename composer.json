@@ -10,5 +10,14 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {}
+    "require": {
+        "php": ">=5.5",
+        "symfony/dom-crawler": "~2.6",
+        "symfony/css-selector": "~2.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bveing\\MyCrawler\\": "src/"
+        }
+    }
 }
