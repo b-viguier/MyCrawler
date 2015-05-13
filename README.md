@@ -10,3 +10,7 @@ A simple crawler for a technical test
 
 * `git clone git@github.com:b-viguier/MyCrawler.git`
 * `composer install`
+
+## Usage
+
+`php bin/my-crawler.php`
