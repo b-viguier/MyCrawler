@@ -34,4 +34,12 @@ class ProductParser {
         $price_txt = str_replace(',', '.', $price_txt);
         return (float)$price_txt;
     }
+
+    /**
+     * @return string An url to a service that will respond with a 30* redirection
+     */
+    public function getObfuscatedUrl()
+    {
+        return str_rot13($this->crawler->filter('div.pdtInfos > strong > span')->attr('data-erl'));
+    }
 }
