@@ -2,7 +2,8 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
-$html_content = file_get_contents('http://www.twenga.fr/theiere.html');
+$http_client  = new \GuzzleHttp\Client();
+$html_content = (string)$http_client->get('http://www.twenga.fr/theiere.html')->getBody();
 $crawler      = new \Symfony\Component\DomCrawler\Crawler($html_content);
 $page_parser  = new \Bveing\MyCrawler\PageParser($crawler);
 
